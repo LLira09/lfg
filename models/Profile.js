@@ -9,13 +9,14 @@ const ProfileSchema = new mongoose.Schema({
     type: String
   },
   bio: {
-    type: String
+    type: String,
+    required: true
   },
   games: {
     type: [String],
     required: true
   },
-  usernames: {
+  gamertags: {
     origin: {
       type: String
     },
@@ -33,7 +34,7 @@ const ProfileSchema = new mongoose.Schema({
     }
   },
   social: {
-    instagram: {
+    twitch: {
       type: String
     },
     facebook: {
