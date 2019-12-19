@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://jake123:jake123@lfg-x9k8y.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "thesecrettoken",
+  "TRACKER_API_URL": "https://public-api.tracker.gg/v2/apex/standard",
+  "TRACKER_API_KEY": "aa59f7bf-9493-4588-993d-6e3190c725e8"
+}
