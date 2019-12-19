@@ -74,6 +74,7 @@ export const createProfile = (
         'Content-Type': 'application/json'
       }
     };
+
     const res = await axios.post('/api/profile', formData, config);
 
     dispatch({
@@ -92,6 +93,7 @@ export const createProfile = (
     if (errors) {
       errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
     }
+
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statusText, status: err.response.status }
